@@ -34,4 +34,4 @@ def show_stats():
     """returns the count of all objects"""
     for key, value in all_obj.items():
         all_obj[key] = storage.count(value)
-    return jsonify(all)
+    return jsonify(all_obj)
